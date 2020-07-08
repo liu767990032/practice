@@ -32,6 +32,7 @@ public class MyController {
         List<Map<String, Object>> commonQuestionList = myDao.getCommonQuestionList();
         //8888
         logger.info("获取问题信息列表："+ JSON.toJSONString(commonQuestionList));
+        //9999
         return commonQuestionList;
     }
 
