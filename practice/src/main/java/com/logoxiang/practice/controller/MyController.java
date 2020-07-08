@@ -52,6 +52,7 @@ public class MyController {
     public Map getWeatherData2(){
         Map forEntity = restTemplate.getForObject("http://t.weather.sojson.com/api/weather/city/101030100", Map.class);
         logger.info(forEntity.toString());
+        //112321
         return forEntity;
     }
 
