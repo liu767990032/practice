@@ -46,6 +46,7 @@ public class MyController {
 
     @GetMapping("getWeather")
     public String getWeatherData(){
+        //54321
         NetUtils.Result result = NetUtils.get("http://t.weather.sojson.com/api/weather/city/101030100", null, "UTF-8");
        //******
         logger.info("天气结果"+result.getRespString());
